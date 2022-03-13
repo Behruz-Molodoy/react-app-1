@@ -7,7 +7,7 @@ const allCategories = ['all', ...new Set(items.map(item => item.category))]
 
 function App() {
   const [data , setData] = useState(items)
-  const [categories , setCategories] = useState(allCategories)
+  const [categories] = useState(allCategories)
 
   const filterCategory = (category) => {
     if(category === 'all'){
